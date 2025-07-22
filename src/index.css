@@ -1,0 +1,20 @@
+@import "tailwindcss";
+/* Anpassade typsnittsklasser */
+.font-heading {
+  font-family: 'Montserrat', 'Lato', sans-serif;
+}
+
+.font-body {
+  font-family: 'Lato', 'Inter', sans-serif; /* Inter är ett bra default sans-serif-typsnitt */
+}
+
+/* Subtila hovringseffekter på länkar */
+a.hover\:underline-custom:hover {
+  text-decoration: underline;
+  text-decoration-color: #84cc16; /* lime-500 */
+  text-underline-offset: 4px;
+}
+
+/* body {
+  @apply bg-stone-100 text-gray-800 antialiased font-body;
+} */
