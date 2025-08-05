@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(),],
-  base: '/curriculum/',
+//  base: '/curriculum/',
    server: {
      host: true, // Allows access from other devices on the network
    },
