@@ -1,17 +1,17 @@
-import React from 'react';
-import profileImg from './assets/danny300.jpg';
+import React from "react";
+import profileImg from "./assets/danny300.jpg";
 function App() {
   return (
     <>
       {/* <!-- Huvudbehållare för CV:t --> */}
       <div className="max-w-5xl mx-auto my-10 bg-white shadow-xl rounded-3xl overflow-hidden flex flex-col md:flex-row">
         {/* <!-- Vänster kolumn (Profil, Kontakt, Språk) --> */}
-        <div className="w-full md:w-1/3 bg-green-900 text-white p-8 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none flex-shrink-0">
-          <div className="mb-10 text-center">
-              <img src={profileImg}
+        <div className="w-full md:w-1/3 bg-emerald-900 text-white p-8 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none flex-shrink-0">
+          <div className="mb-14 text-center">
+            <img
+              src={profileImg}
               alt="Profilbild"
-              className="rounded-full mb-6 border-4 border-lime-500 shadow-lg mx-auto max-w-50"
-              
+              className="rounded-full mb-6 border-4 border-lime-500 shadow-lg mx-auto"
             />
             <h1 className="text-4xl font-bold mb-2 font-heading tracking-wide">
               Danny Gomez
@@ -22,7 +22,7 @@ function App() {
           </div>
 
           {/* <!-- Kontaktsektion --> */}
-          <div className="mb-10">
+          <div className="mb-14">
             <h2 className="text-2xl font-semibold mb-4 pb-2 border-b-2 border-lime-500 text-lime-200 font-heading tracking-wide">
               KONTAKT
             </h2>
@@ -57,15 +57,54 @@ function App() {
           </div>
 
           {/* <!-- Språksektion --> */}
-          <div className="mb-0">
+          <div className="mb-14">
             <h2 className="text-2xl font-semibold mb-4 pb-2 border-b-2 border-lime-500 text-lime-200 font-heading tracking-wide">
               SPRÅK
             </h2>
-            <ul className="list-disc list-inside text-base font-semibold space-y-2">
+            <ul className="list-disc list-inside text-base font-semibold space-y-2 tracking-wider">
               <li>Svenska</li>
               <li>Spanska</li>
               <li>Engelska</li>
             </ul>
+          </div>
+
+          {/* <!-- Utbildningssektion --> */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 pb-3 border-b-2 border-lime-500 text-lime-200 font-heading tracking-wide">
+              UTBILDNING
+            </h2>
+            <div className="mb-8 mt-5">
+              <h3 className="text-xl font-semibold font-heading tracking-wide">
+                Fullstack-utvecklare/ Programmering AI
+              </h3>
+              <p className="text-lg text-lime-200 tracking-wider">
+                Lexicon, Malmö | 2025 – 2026
+              </p>
+            </div>
+            <div className="mb-8 mt-5">
+              <h3 className="text-xl font-semibold font-heading tracking-wide">
+                Yrkesmåleri vuxenutbildning
+              </h3>
+              <p className="text-lg text-lime-200 tracking-wider">
+                Tau hantverksskola, Malmö | 2010 – 2012
+              </p>
+            </div>
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold font-heading tracking-wide">
+                Interaktionsdesign, Konst, Kultur & Kommunikation
+              </h3>
+              <p className="text-lg text-lime-200 tracking-wider">
+                Malmö Högskola, Malmö | 2001 – 2003
+              </p>
+            </div>
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold font-heading tracking-wide">
+                Konst & formgivning, Estetiska programmet
+              </h3>
+              <p className="text-lg text-lime-200 tracking-wider">
+                Vipeholmskolan, Lund | 1997 – 2000
+              </p>
+            </div>
           </div>
         </div>
 
@@ -143,6 +182,9 @@ function App() {
                   Utveckling av websystem för kartläggning av åkrar genom
                   drönare.
                 </li>
+                <li>PHP programmering.</li>
+                <li>Javascript programmering.</li>
+                <li>Gränssnittsdesign.</li>
               </ul>
             </div>
             <div className="mb-8">
@@ -164,8 +206,11 @@ function App() {
                 Pixelant AB, Malmö | September 2012 – Mars 2013
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
-                <li>Utveckling och design av webbplatser.</li>
-                <li>Kodning och implementering av webblösningar.</li>
+                <li>
+                  Framtagning av webbplats enligt designskisser från kund.
+                  Webbplatserna togs fram i publiceringsverktyget TYPO3 och
+                  testades mot de vanligaste webbläsarna.
+                </li>
               </ul>
             </div>
             <div className="mb-8">
@@ -176,8 +221,15 @@ function App() {
                 Basilicon AB, Malmö | Juli 2007 – Juni 2010
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
-                <li>Utveckling av webbapplikationer och animering.</li>
-                <li>Kreativt arbete med webb och design.</li>
+                <li>Flash animering/programmering</li>
+                <li>Bildbehandling/fotoredigering</li>
+                <li>Backendprogrammering</li>
+                <li>Webbapplikationer</li>
+                <li>3D modellering</li>
+                <li>Databasdesign</li>
+                <li>Gränssnittsdesign </li>
+                <li>Spelutveckling</li>
+                <li>Webbdesign</li>
               </ul>
             </div>
             <div className="mb-8">
@@ -188,7 +240,10 @@ function App() {
                 Academedia Eductus, Malmö | 2006
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
-                <li>Handledde studenter i multimediaproduktion.</li>
+                <li>
+                  Handledning i multimediaprogram som Flash, Photoshop,
+                  Illustrator, Dreamweaver och After Effects.
+                </li>
               </ul>
             </div>
             <div className="mb-8">
@@ -208,7 +263,11 @@ function App() {
                 TV-Animation, Köpenhamn | 2003
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
-                <li>Arbetade med programmering och systemutveckling.</li>
+                <li>
+                  Programmering av ”Filmverkstaden”, en flashbaserad
+                  animationseditor där tittare av Barnkanalen kunde skapa sina
+                  egna animationer via SVT:s hemsida, som sedan sändes på tv.
+                </li>
               </ul>
             </div>
             <div className="mb-8">
@@ -219,7 +278,12 @@ function App() {
                 Malmö Högskola, Malmö | 2002 – 2003
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
-                <li>Handledde studenter i speldesign.</li>
+                <li>
+                  Handledning i spelprogrammering, speldesign samt 3D
+                  modellering.
+                </li>
+                <li>Macromedia Director.</li>
+                <li>3D Studio Max.</li>
               </ul>
             </div>
             <div className="mb-8">
@@ -230,7 +294,13 @@ function App() {
                 Malmö Högskola, Malmö | 2001 – 2003
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
-                <li>Utvecklade webbapplikationer.</li>
+                <li>
+                  Framtagning av flash-applikation för distansföreläsning av
+                  globaliseringskurs med kamera. Eleverna gavs möjlighet att
+                  ställa frågor genom text som besvarades i tur och ordning av
+                  föreläsaren. Livesändningarna spelades även in så att elever i
+                  helt avvikande tidszoner kunde ta del av föreläsningarna.
+                </li>
               </ul>
             </div>
             <div className="mb-8">
@@ -241,7 +311,9 @@ function App() {
                 Tripatourium, USA | 2001 – 2003
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
-                <li>Arbetade med animering och grafisk formgivning.</li>
+                <li>
+                  Framtagning av banners, animationer och flash-applikationer.
+                </li>
               </ul>
             </div>
             <div className="mb-0">
@@ -250,37 +322,8 @@ function App() {
               </h3>
               <p className="text-lg text-gray-600">Gambro, Lund | 1996</p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
-                <li>Ansvarig för packning av medicinska redskap.</li>
+                <li>Packning på produktionslinje.</li>
               </ul>
-            </div>
-          </div>
-
-          {/* Utbildningssektion */}
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold pb-3 border-b-2 border-lime-400 text-green-500 font-heading tracking-wide">
-              UTBILDNING
-            </h2>
-            <div className="mb-8 mt-5">
-              <h3 className="text-xl font-semibold font-heading">
-                Yrkesmåleri vuxenutbildning
-              </h3>
-              <p className="text-lg text-gray-600">
-                Tau hantverksskola, Malmö | 2010 – 2012
-              </p>
-            </div>
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold font-heading">
-                Interaktionsdesign, Konst, Kultur & Kommunikation
-              </h3>
-              <p className="text-lg text-gray-600">
-                Malmö Högskola, Malmö | 2001 – 2003
-              </p>
-            </div>
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold font-heading">
-                Konst & formgivning, Estetiska programmet
-              </h3>
-              <p className="text-lg text-gray-600">Lund | 1997 – 2000</p>
             </div>
           </div>
         </div>
