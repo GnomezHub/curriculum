@@ -1,17 +1,20 @@
 import React from "react";
 import profileImg from "./assets/danny300.jpg";
+import aws from "./assets/awslogo.png";
+import azure from "./assets/microsoft-certified-azure-fundamentals.png";
+
 function App() {
   return (
     <>
       {/* <!-- Huvudbehållare för CV:t --> */}
       <div className="max-w-5xl mx-auto my-10 bg-white shadow-xl rounded-3xl overflow-hidden flex flex-col md:flex-row">
         {/* <!-- Vänster kolumn (Profil, Kontakt, Språk) --> */}
-        <div className="w-full md:w-1/3 bg-emerald-900 text-white p-8 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none flex-shrink-0">
+        <div className="w-full md:w-1/3 bg-gray-700 text-white p-8 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none flex-shrink-0">
           <div className="mb-14 text-center">
             <img
               src={profileImg}
               alt="Profilbild"
-              className="rounded-full mb-6 border-4 border-lime-500 shadow-lg mx-auto"
+              className="rounded-full mb-6 border-3 border-lime-400 shadow-lg mx-auto"
             />
             <h1 className="text-4xl font-bold mb-2 font-heading tracking-wide">
               Danny Gomez
@@ -23,16 +26,16 @@ function App() {
 
           {/* <!-- Kontaktsektion --> */}
           <div className="mb-14">
-            <h2 className="text-2xl font-semibold mb-4 pb-2 border-b-2 border-lime-500 text-lime-200 font-heading tracking-wide">
+            <h2 className="text-2xl font-semibold mb-4 pb-2 border-b-2 border-lime-400 text-lime-200 font-heading tracking-wide">
               KONTAKT
             </h2>
             <ul className="text-base space-y-3">
               <li>
-                <strong className="font-semibold">Telefon:</strong> (+46) 072
-                007 92 65
+                <strong className="font-semibold">Telefon: </strong>
+                <span className="text-teal-200">(+46) 072 007 92 65</span>
               </li>
               <li>
-                <strong className="font-semibold">E-post:</strong>{" "}
+                <strong className="font-semibold">E-post: </strong>
                 <a
                   href="mailto:danny.gomez.mail@gmail.com"
                   className="text-lime-300 hover:text-lime-100 hover:underline-custom transition duration-300 ease-in-out"
@@ -41,11 +44,15 @@ function App() {
                 </a>
               </li>
               <li>
-                <strong className="font-semibold">Adress:</strong> RINGGATAN 5C,
-                212 12 MALMÖ
+                <strong className="font-semibold">Adress:</strong>
+                <span className="text-lime-300">
+                  {" "}
+                  Ringgatan 5 C, 212 12 Malmö
+                </span>
               </li>
+
               <li>
-                <strong className="font-semibold">Github:</strong>{" "}
+                <strong className="font-semibold">Github: </strong>
                 <a
                   href="https://github.com/GnomezHub"
                   className="text-lime-300 hover:text-lime-100 hover:underline-custom transition duration-300 ease-in-out"
@@ -53,12 +60,22 @@ function App() {
                   GnomezHub
                 </a>
               </li>
+              <li>
+                <strong className="font-semibold">Portfolio: </strong>
+                <a
+                  href="https://dannygomez-portfolio.netlify.app/"
+                  target="_blank"
+                  className="text-lime-300 hover:text-lime-100 hover:underline-custom transition duration-300 ease-in-out"
+                >
+                  dannygomez-portfolio.netlify.app
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* <!-- Språksektion --> */}
           <div className="mb-14">
-            <h2 className="text-2xl font-semibold mb-4 pb-2 border-b-2 border-lime-500 text-lime-200 font-heading tracking-wide">
+            <h2 className="text-2xl font-semibold mb-4 pb-2 border-b-2 border-lime-400 text-lime-200 font-heading tracking-wide">
               SPRÅK
             </h2>
             <ul className="list-disc list-inside text-base font-semibold space-y-2 tracking-wider">
@@ -70,14 +87,14 @@ function App() {
 
           {/* <!-- Utbildningssektion --> */}
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 pb-3 border-b-2 border-lime-500 text-lime-200 font-heading tracking-wide">
+            <h2 className="text-2xl font-semibold mb-4 pb-3 border-b-2 border-lime-400 text-lime-200 font-heading tracking-wide">
               UTBILDNING
             </h2>
             <div className="mb-8 mt-5">
               <h3 className="text-xl font-semibold font-heading tracking-wide">
                 Fullstack-utvecklare/ Programmering AI
               </h3>
-              <p className="text-lg text-lime-200 tracking-wider">
+              <p className="text-lg text-teal-200 tracking-wider">
                 Lexicon, Malmö | 2025 – 2026
               </p>
             </div>
@@ -85,7 +102,7 @@ function App() {
               <h3 className="text-xl font-semibold font-heading tracking-wide">
                 Yrkesmåleri vuxenutbildning
               </h3>
-              <p className="text-lg text-lime-200 tracking-wider">
+              <p className="text-lg text-teal-200 tracking-wider">
                 Tau hantverksskola, Malmö | 2010 – 2012
               </p>
             </div>
@@ -93,7 +110,7 @@ function App() {
               <h3 className="text-xl font-semibold font-heading tracking-wide">
                 Interaktionsdesign, Konst, Kultur & Kommunikation
               </h3>
-              <p className="text-lg text-lime-200 tracking-wider">
+              <p className="text-lg text-teal-200 tracking-wider">
                 Malmö Högskola, Malmö | 2001 – 2003
               </p>
             </div>
@@ -101,9 +118,23 @@ function App() {
               <h3 className="text-xl font-semibold font-heading tracking-wide">
                 Konst & formgivning, Estetiska programmet
               </h3>
-              <p className="text-lg text-lime-200 tracking-wider">
+              <p className="text-lg text-teal-200 tracking-wider">
                 Vipeholmskolan, Lund | 1997 – 2000
               </p>
+            </div>
+
+            <div className="mt-16 mb-8 flex items-center">
+              <img
+                src={aws}
+                alt="AWS Certified"
+                className="h-16 mx-auto"
+              />
+
+              <img
+                src={azure}
+                alt="Azure AZ-900 Certified"
+                className="h-28 mx-auto"
+              />
             </div>
           </div>
         </div>
@@ -116,11 +147,19 @@ function App() {
               PROFIL
             </h2>
             <p className="text-lg leading-relaxed mt-5">
-              Mångsidig och erfaren programmerare och systemutvecklare med en
-              bred bakgrund inom webbutveckling, interaktionsdesign och
-              multimedia. Med flytande kunskaper i svenska, spanska och
-              engelska, och en passion för både teknisk utveckling och kreativ
-              formgivning.
+              Hej! Jag, Danny Gomez, är en lösningsorienterad
+              fullstack-utvecklare med kreativa drag. Började arbetslivet med
+              webbutveckling och multimedia men fortsatte som programmerare.
+              <br /> Jag genomför en fullstack-utbildning hos Lexicon, och har
+              därifrån fått 60 timmars APL som en avslutande del av
+              utbildningen. Min intention är att lära mig hur ni jobbar, då det
+              som jag har läst i era platsannonser verkar spännande. Och så är
+              Knowit den mest lockande av de företag som jag har kikat på. Dyker
+              det upp ett behov hos er efter de 60 dagarna, så kommer vi att
+              veta då i vad jag blivit expert på av det ni gör.
+              <br /> I utbildningen ingår även certifiering i AWS och Azure
+              AZ-900 samt AI-programmering, och jag har hängt med i användandet
+              av verktyg som github-copilot. Jag bor i centrala Malmö.
             </p>
           </div>
 
@@ -160,14 +199,14 @@ function App() {
             </div>
             <div className="mb-8">
               <h3 className="text-xl font-semibold font-heading">
-                Elevassistent
+                Elevassistent [Webbutveckling Programmering och teknik]
               </h3>
               <p className="text-lg text-gray-600">
                 Innovationsgymnasiet, Lund | November 2018 – Februari 2019
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
                 <li>Stöd och assistans till elever med olika behov.</li>
-                <li>Vikarie i diverse gymnasieämnen.</li>
+                <li>Vikarie i diverse andra gymnasieämnen.</li>
               </ul>
             </div>
             <div className="mb-8">
@@ -179,9 +218,10 @@ function App() {
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
                 <li>
-                  Utveckling av websystem för kartläggning av åkrar genom
-                  drönare.
+                  Utveckling av ett wordpress plugin för kartläggning av åkrar
+                  genom drönare.
                 </li>
+                <li>Wordpress</li>
                 <li>PHP programmering.</li>
                 <li>Javascript programmering.</li>
                 <li>Gränssnittsdesign.</li>
