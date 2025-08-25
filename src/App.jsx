@@ -124,11 +124,7 @@ function App() {
             </div>
 
             <div className="mt-16 mb-8 flex items-center">
-              <img
-                src={aws}
-                alt="AWS Certified"
-                className="h-16 mx-auto"
-              />
+              <img src={aws} alt="AWS Certified" className="h-16 mx-auto" />
 
               <img
                 src={azure}
@@ -153,10 +149,11 @@ function App() {
               <br /> Jag genomför en fullstack-utbildning hos Lexicon, och har
               därifrån fått 60 timmars APL som en avslutande del av
               utbildningen. Min intention är att lära mig hur ni jobbar, då det
-              som jag har läst i era platsannonser verkar spännande. Och så är
-              Knowit den mest lockande av de företag som jag har kikat på. Dyker
-              det upp ett behov hos er efter de 60 dagarna, så kommer vi att
-              veta då i vad jag blivit expert på av det ni gör.
+              som jag har läst i era platsannonser verkar spännande.
+              {/* Och så är
+              Knowit den mest lockande av de företag som jag har kikat på.*/}{" "}
+              Dyker det upp ett behov hos er efter de 60 dagarna, så kommer vi
+              att veta då i vad jag blivit expert på av det ni gör.
               <br /> I utbildningen ingår även certifiering i AWS och Azure
               AZ-900 samt AI-programmering, och jag har hängt med i användandet
               av verktyg som github-copilot. Jag bor i centrala Malmö.
