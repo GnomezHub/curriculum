@@ -150,8 +150,8 @@ function App() {
               därifrån fått 60 timmars APL som en avslutande del av
               utbildningen. Min intention är att lära mig hur ni jobbar, då det
               som jag har läst i era platsannonser verkar spännande.
-              {/* Och så är
-              Knowit den mest lockande av de företag som jag har kikat på.*/}{" "}
+               Och så är
+              Knowit den mest lockande av de företag som jag har kikat på.{" "}
               Dyker det upp ett behov hos er efter de 60 dagarna, så kommer vi
               att veta då i vad jag blivit expert på av det ni gör.
               <br /> I utbildningen ingår även certifiering i AWS och Azure
