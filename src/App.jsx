@@ -147,11 +147,10 @@ function App() {
               fullstack-utvecklare med kreativa drag. Började arbetslivet med
               webbutveckling och multimedia men fortsatte som programmerare.
               <br /> Jag genomför en fullstack-utbildning hos Lexicon, och har
-              därifrån fått 60 timmars APL som en avslutande del av
+              därifrån fått 60 dagars APL som en avslutande del av
               utbildningen. Min intention är att lära mig hur ni jobbar, då det
               som jag har läst i era platsannonser verkar spännande.
-               Och så är
-              Knowit den mest lockande av de företag som jag har kikat på.{" "}
+               {/* Och så är Knowit den mest lockande av de företag som jag har kikat på. */}
               Dyker det upp ett behov hos er efter de 60 dagarna, så kommer vi
               att veta då i vad jag blivit expert på av det ni gör.
               <br /> I utbildningen ingår även certifiering i AWS och Azure
@@ -174,26 +173,14 @@ function App() {
               </p>
               <ul className="list-disc list-inside mt-3 text-base space-y-2">
                 <li>
-                  Ansvarig för daglig drift och underhåll av Storforsens
+                  Guidade turer på Storforsens
                   Naturreservat.
                 </li>
                 <li>Campingvärd och vaktmästare på Selholmens Camping.</li>
-                <li>Djurskötsel på Hålls Lantbruk.</li>
-                <li>Flyttstädning av villor i Vidsel.</li>
+
               </ul>
             </div>
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold font-heading">
-                Tältmontör / Diskare
-              </h3>
-              <p className="text-lg text-gray-600">
-                FESToTÄLT Uthyrningar, Helsingborg | Maj 2019 – Augusti 2019
-              </p>
-              <ul className="list-disc list-inside mt-3 text-base space-y-2">
-                <li>Montering och nedmontering av tält vid evenemang.</li>
-                <li>Ansvar för disk och rengöring av utrustning.</li>
-              </ul>
-            </div>
+
             <div className="mb-8">
               <h3 className="text-xl font-semibold font-heading">
                 Elevassistent [Webbutveckling Programmering och teknik]
@@ -218,7 +205,6 @@ function App() {
                   Utveckling av ett wordpress plugin för kartläggning av åkrar
                   genom drönare.
                 </li>
-                <li>Wordpress</li>
                 <li>PHP programmering.</li>
                 <li>Javascript programmering.</li>
                 <li>Gränssnittsdesign.</li>
